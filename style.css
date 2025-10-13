@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+the .game-container {
+    text-align: center;
+    background: rgba(15, 52, 96, 0.3);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #e94560;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.score, .high-score {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.score {
+    color: #4ecca3;
+}
+
+.high-score {
+    color: #ffd700;
+}
+
+#gameCanvas {
+    border: 3px solid #16213e;
+    background: #0f3460;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+the .game-over {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(233, 69, 96, 0.2);
+    border-radius: 10px;
+    border: 2px solid #e94560;
+}
+
+the .game-over h2 {
+    color: #e94560;
+    margin-bottom: 10px;
+}
+
+the .game-over p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+the .btn {
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #e94560 0%, #c23750 100%);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+the .btn:hover {
+    background: linear-gradient(135deg, #c23750 0%, #e94560 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(233, 69, 96, 0.6);
+}
+
+the .btn:active {
+    transform: translateY(0);
+}
+
+the .controls {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+the .controls p {
+    margin: 5px 0;
+}
+
+kbd {
+    background: #16213e;
+    padding: 3px 8px;
+    border-radius: 3px;
+    border: 1px solid #0f3460;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #4ecca3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+the .hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .game-container {
+        padding: 20px;
+    }
+    
+h1 {
+        font-size: 2rem;
+    }
+    
+    #gameCanvas {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+}
