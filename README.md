@@ -15,7 +15,7 @@ Part 1: Understanding Copilot (5 minutes)
 Use these refined prompts when interacting with Copilot or asking for help.
 
 ### Prompt 1 — Tech recommendation
-"I want to create a simple Snake game. Which technologies should I use for a fast MVP (HTML5 Canvas, vanilla JS, or a framework)? Explain pros/cons briefly."
+"I want to create a simple Snake game. Which technologies should I use for a fast MVP? Explain pros/cons briefly."
 
 ### Prompt 2 — Project structure
 "Show me a concise project structure for an HTML5 Canvas + JavaScript Snake game with brief purpose for each file."
